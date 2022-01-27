@@ -1,0 +1,77 @@
+@import "reset.css";
+@import "global.css";
+
+.container {
+  margin: 27px 150px;
+}
+
+.navbar {
+  display: flex;
+  justify-content: end;
+  margin: 27px 60px;
+}
+
+.nav-links {
+  display: flex;
+}
+
+.nav-links > li {
+  margin-left: 34px;
+  font-size: var(--fs-url-btns);
+  font-weight: var(--fw-Medium);
+}
+
+.hero {
+  padding-top: 150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5%;
+}
+
+.portfolio-img {
+  flex: 1 1;
+  justify-content: center;
+  align-items: center;
+}
+
+.portfolio-img > img {
+  border-radius: 50%;
+  height: 250px;
+  width: 260px;
+}
+
+.portfolio-img::after {
+  content: "";
+  display: block;
+  border-radius: 50%;
+  background-color: #edf7fa;
+  z-index: -999;
+  height: 250px;
+  width: 250px;
+  position: relative;
+  top: -200px;
+}
+
+.info {
+  flex: 1 auto;
+}
+
+.info > h1 {
+  margin-bottom: 2%;
+}
+
+.info > p {
+  margin-bottom: 2%;
+  width: 75%;
+}
+
+.info > button {
+  border: none;
+  border-radius: 2%;
+  padding: 21px 15px;
+  font-size: var(--fs-url-btns);
+  font-weight: var(--fw-Medium);
+  background-color: var(--clr-primary);
+  color: white;
+}
